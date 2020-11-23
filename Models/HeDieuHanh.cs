@@ -7,14 +7,14 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace CellphoneStore.Models
 {
-    public class Supplier
+    public class HeDieuHanh
     {
         [Key]
-        [Display(Name = "Mã nhà cung cấp")]
-        public int supplier_ID { get; set; }
+        [Display(Name = "Mã hệ điều hành")]
+        public int hdh_ID { get; set; }
 
-        [Display(Name = "Tên nhà cung cấp")]
-        public string supplier_Name { get; set; }
+        [Display(Name = "Tên hệ điều hành")]
+        public string hdh_Name { get; set; }
 
         public virtual ICollection<Product> GetProducts { get; set; }
     }
