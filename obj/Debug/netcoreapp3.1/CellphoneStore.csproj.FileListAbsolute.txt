@@ -162,3 +162,9 @@ C:\Users\Admin\DataUser\HUFLIT\CellphoneStore\obj\Debug\netcoreapp3.1\staticweba
 C:\Users\Admin\DataUser\HUFLIT\CellphoneStore\obj\Debug\netcoreapp3.1\CellphoneStore.dll
 C:\Users\Admin\DataUser\HUFLIT\CellphoneStore\obj\Debug\netcoreapp3.1\CellphoneStore.pdb
 C:\Users\Admin\DataUser\HUFLIT\CellphoneStore\obj\Debug\netcoreapp3.1\CellphoneStore.genruntimeconfig.cache
+C:\Users\Admin\DataUser\HUFLIT\CellphoneStore\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\Account\Login.cshtml.g.cs
+C:\Users\Admin\DataUser\HUFLIT\CellphoneStore\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\Account\Logout.cshtml.g.cs
+C:\Users\Admin\DataUser\HUFLIT\CellphoneStore\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\Account\Register.cshtml.g.cs
+C:\Users\Admin\DataUser\HUFLIT\CellphoneStore\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\Account\_ViewImports.cshtml.g.cs
+C:\Users\Admin\DataUser\HUFLIT\CellphoneStore\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\_ValidationScriptsPartial.cshtml.g.cs
+C:\Users\Admin\DataUser\HUFLIT\CellphoneStore\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\_ViewImports.cshtml.g.cs

@@ -26,6 +26,10 @@ namespace CellphoneStore.Data
 
         protected override void OnModelCreating(ModelBuilder builder)
         {
+            base.OnModelCreating(builder);
+
+            builder.Entity<OrderDetail>().HasKey(o => new { o.order_ID, o.product_ID });
+
             builder.Entity<Supplier>().HasData(
                 new Supplier { supplier_ID = 1, supplier_Name = "FPT Telecom" },
                 new Supplier { supplier_ID = 2, supplier_Name = "Thế Giới Di Động" }
@@ -64,12 +68,78 @@ namespace CellphoneStore.Data
             );
 
             builder.Entity<Product>().HasData(
-                new Product { product_ID =, product_Name = "", product_Price =, product_Quantity =, product_Image = "", product_Description = "", supplier_ID =, hdh_ID =, brand_ID =},
-                new Product { product_ID =, product_Name = "", product_Price =, product_Quantity =, product_Image = "", product_Description = "", supplier_ID =, hdh_ID =, brand_ID =},
-                new Product { product_ID =, product_Name = "", product_Price =, product_Quantity =, product_Image = "", product_Description = "", supplier_ID =, hdh_ID =, brand_ID =},
-                new Product { product_ID =, product_Name = "", product_Price =, product_Quantity =, product_Image = "", product_Description = "", supplier_ID =, hdh_ID =, brand_ID =},
-                new Product { product_ID =, product_Name = "", product_Price =, product_Quantity =, product_Image = "", product_Description = "", supplier_ID =, hdh_ID =, brand_ID =},
-                new Product { product_ID =, product_Name = "", product_Price =, product_Quantity =, product_Image = "", product_Description = "", supplier_ID =, hdh_ID =, brand_ID =}
+                new Product
+                {
+                    product_ID = 1,
+                    product_Name = "iPhone 11",
+                    product_Price = 1200,
+                    product_Quantity = 100,
+                    product_Image = "iphone-11.png",
+                    product_Description = "iPhone 11 - 64GB",
+                    supplier_ID = 1,
+                    hdh_ID = 1,
+                    brand_ID = 1
+                },
+                new Product
+                {
+                    product_ID = 2,
+                    product_Name = "iPhone 12",
+                    product_Price = 1290,
+                    product_Quantity = 100,
+                    product_Image = "iphone-12.png",
+                    product_Description = "iPhone 12 - 64GB",
+                    supplier_ID = 1,
+                    hdh_ID = 1,
+                    brand_ID = 1
+                },
+                new Product
+                {
+                    product_ID = 3,
+                    product_Name = "iPhone 12 Pro",
+                    product_Price = 1400,
+                    product_Quantity = 100,
+                    product_Image = "iphone-12-pro.png",
+                    product_Description = "iPhone 12 - 64GB",
+                    supplier_ID = 1,
+                    hdh_ID = 1,
+                    brand_ID = 1
+                },
+                new Product
+                {
+                    product_ID = 4,
+                    product_Name = "Samsung Galaxy S20",
+                    product_Price = 1350,
+                    product_Quantity = 100,
+                    product_Image = "samsung-galaxy-s20.png",
+                    product_Description = "Samsung Galaxy S20 - New 100% fullbox",
+                    supplier_ID = 2,
+                    hdh_ID = 2,
+                    brand_ID = 2
+                },
+                new Product
+                {
+                    product_ID = 5,
+                    product_Name = "Oppo A93",
+                    product_Price = 1000,
+                    product_Quantity = 100,
+                    product_Image = "oppo-a93.png",
+                    product_Description = "Oppo A93 - New 100% fullbox",
+                    supplier_ID = 2,
+                    hdh_ID = 2,
+                    brand_ID = 4
+                },
+                new Product
+                {
+                    product_ID = 6,
+                    product_Name = "Xiaomi Mi 10T Pro",
+                    product_Price = 1100,
+                    product_Quantity = 100,
+                    product_Image = "xiaomi-mi-10t-pro.png",
+                    product_Description = "Xiaomi Mi 10T Pro 64GB - New 100% fullbox",
+                    supplier_ID = 1,
+                    hdh_ID = 2,
+                    brand_ID = 3
+                }
             );
         }
     }

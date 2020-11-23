@@ -45,5 +45,9 @@ namespace CellphoneStore.Models
         [ForeignKey("Supplier")]
         public int? supplier_ID { get; set; }
         public virtual Supplier Supplier { get; set; }
+
+        [ForeignKey("Categories")]
+        public int? categories_ID { get; set; }
+        public virtual Categories Categories { get; set; }
     }
 }

@@ -2,70 +2,195 @@
 for details on configuring this project to bundle and minify static web assets. */
 
 a.navbar-brand {
-  white-space: normal;
-  text-align: center;
-  word-break: break-all;
+    white-space: normal;
+    text-align: center;
+    word-break: break-all;
 }
 
 /* Provide sufficient contrast against white background */
+
 a {
-  color: #0366d6;
+    color: #0366d6;
 }
 
 .btn-primary {
-  color: #fff;
-  background-color: #1b6ec2;
-  border-color: #1861ac;
+    color: #fff;
+    background-color: #1b6ec2;
+    border-color: #1861ac;
 }
 
-.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
-  color: #fff;
-  background-color: #1b6ec2;
-  border-color: #1861ac;
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    color: #fff;
+    background-color: #1b6ec2;
+    border-color: #1861ac;
 }
 
 /* Sticky footer styles
 -------------------------------------------------- */
+
 html {
-  font-size: 14px;
+    font-size: 14px;
 }
+
 @media (min-width: 768px) {
-  html {
-    font-size: 16px;
-  }
+    html {
+        font-size: 16px;
+    }
 }
 
 .border-top {
-  border-top: 1px solid #e5e5e5;
+    border-top: 1px solid #e5e5e5;
 }
+
 .border-bottom {
-  border-bottom: 1px solid #e5e5e5;
+    border-bottom: 1px solid #e5e5e5;
 }
 
 .box-shadow {
-  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+    box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
 }
 
 button.accept-policy {
-  font-size: 1rem;
-  line-height: inherit;
+    font-size: 1rem;
+    line-height: inherit;
 }
 
 /* Sticky footer styles
 -------------------------------------------------- */
+
 html {
-  position: relative;
-  min-height: 100%;
+    position: relative;
+    min-height: 100%;
 }
 
 body {
-  /* Margin bottom by footer height */
-  margin-bottom: 60px;
+    /* Margin bottom by footer height */
+    margin-bottom: 60px;
 }
+
 .footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  white-space: nowrap;
-  line-height: 60px; /* Vertically center the text there */
+    bottom: 0;
+    width: 100%;
+    height: 14rem;
+    white-space: nowrap;
+    line-height: 60px;
+    /* Vertically center the text there */
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown:hover {
+    background-color: red;
+    border-radius: 6px;
+}
+
+.dropdown:hover .dropdown__list {
+    display: inline-block;
+}
+
+.dropdown__select {
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.dropdown__list {
+    margin-top: 15px;
+    padding: 0;
+    list-style: none;
+    display: none;
+    position: absolute;
+    left: 0;
+    width: 10em;
+    z-index: 1;
+}
+
+.dropdown__list::before {
+    content: "";
+    height: 15px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    background-color: transparent;
+    transform: translateY(-100%);
+}
+
+.dropdown__item {
+    text-transform: uppercase;
+    cursor: pointer;
+    background-color: red;
+    text-align: center;
+    transition: background-color 0.2s linear;
+}
+
+.dropdown__item:first-child {
+    border-radius: 6px 6px 0 0;
+    position: relative;
+}
+
+.dropdown__item:first-child::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 20px;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid red;
+    transform: translateY(-100%);
+    transition: boder-color 0.2s linear;
+}
+
+.dropdown__item:first-child:hover::before {
+    border-bottom-color: cyan;
+}
+
+.dropdown__item:last-child {
+    border-radius: 0 0 6px 6px;
+}
+
+.dropdown__item:hover {
+    background-color: cyan;
+}
+
+a.dropdown__text {
+    text-decoration: none;
+}
+
+.search-text {
+    height: 40px;
+    border: 0.2rem solid #808080;
+    border-radius: 0.7rem;
+    background-color: none;
+}
+
+.search-text input {
+    width: 244px;
+    height: 30px;
+    border: none;
+    margin-left: 3px;
+}
+
+.search-text input:focus, .search-text input:active, .search-text input {
+    outline: 0;
+    outline-style: none;
+    outline-width: 0;
+    border-radius: 10px 0 0 0;
+}
+
+.search-text button {
+    float: right;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    background: transparent;
+    border: none;
+}
+
+.search-text button:focus, .search-text button:active, .search-text button {
+    outline: 0;
+    outline-style: none;
+    outline-width: 0;
+    border-radius: 10px 0 0 0;
 }
