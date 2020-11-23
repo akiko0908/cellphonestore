@@ -7,7 +7,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace CellphoneStore.Models
 {
-    public class Supplier
+    public class Brand
     {
 
     }
