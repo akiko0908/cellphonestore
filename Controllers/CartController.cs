@@ -86,7 +86,7 @@ namespace CellphoneStore.Controllers
 
             SaveCartSession(cart);
 
-            return View("Index");
+            return RedirectToAction("Index");
         }
 
         public IActionResult RemoveCart()
@@ -95,11 +95,23 @@ namespace CellphoneStore.Controllers
             return View();
         }
 
-        [HttpPost]
-        public IActionResult UpdateCart([FromForm] int product_ID, [FromForm] int orderdetail_Quantity)
-        {
-            return RedirectToAction();
-        }
+        // [HttpPost]
+        // public IActionResult UpdateCart([FromForm] int productid, [FromForm] int orderdetail_Quantity)
+        // {
+        //     // Cập nhật Cart thay đổi số lượng quantity ...
+        //     var cart = GetCartItems();
+
+        //     var cartitem = cart.Find(p => p.Product.product_ID == productid);
+        //     if (cartitem != null)
+        //     {
+        //         // Đã tồn tại, tăng thêm 1
+        //         cartitem.orderdetail_Quantity = orderdetail_Quantity;
+        //     }
+
+        //     SaveCartSession(cart);
+        //     // Trả về mã thành công (không có nội dung gì - chỉ để Ajax gọi)
+        //     return Ok();
+        // }
 
         public IActionResult CheckOut()
         {

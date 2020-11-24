@@ -10,7 +10,13 @@ a.navbar-brand {
 /* Provide sufficient contrast against white background */
 
 a {
-    color: #0366d6;
+    color: #000000;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #189eff;
 }
 
 .btn-primary {
@@ -201,9 +207,4 @@ a.dropdown__text {
     padding-right: 5px;
     color: #000000;
     text-decoration: none;
-}
-
-.cart:hover {
-    text-decoration: none;
-    color: #189eff;
 }

@@ -1,0 +1,17 @@
+@using Microsoft.AspNetCore.Http
+@using Newtonsoft.Json
+@inject IHttpContextAccessor HttpContextAccessor
+
+@{
+    var session = HttpContextAccessor.HttpContext.Session;
+    string jsonCart = session.GetString(CellphoneStore.Controllers.CartController.CartKey);
+    if (jsonCart != null)
+    {
+        var cart = JsonConvert.DeserializeObject<List<OrderDetail>>(jsonCart);
+        <div class="nav-item cart"><a asp-controller="Cart" asp-action="Index">Giỏ hàng(@cart.Count)</a></div>
+    }
+    else
+    {
+        <div class="nav-item cart"><a asp-controller="Cart" asp-action="Index">Giỏ hàng(0)</a></div>
+    }
+}

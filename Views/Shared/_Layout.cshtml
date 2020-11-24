@@ -65,8 +65,12 @@
                         <button type="submit"><i class="fa fa-search"></i></button>
                     </div>
                 </form>
-                <a class="cart" asp-controller="Cart" asp-action="Index">Giỏ hàng <i
-                        class="fa fa-shopping-cart"></i></a>
+
+                @await Html.PartialAsync("_CartPartial")
+
+                @* <a class="cart" asp-controller="Cart" asp-action="Index">Giỏ hàng<i class="fa
+                    fa-shopping-cart"></i></a> *@
+
                 <partial name="_LoginPartial" />
             </div>
         </nav>

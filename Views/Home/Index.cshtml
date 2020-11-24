@@ -19,8 +19,8 @@
                 <div class="card-footer">
                     <a asp-controller="Home" asp-action="Details" asp-route-id="@item.product_ID"
                         asp-route-name="@item.product_Name" class="btn btn-primary">Detail</a>
-                    <a asp-controller="" asp-action="" asp-route-id="@item.product_ID" asp-route-name="@item.product_Name"
-                        class="btn btn-info">Add To Cart</a>
+                    <a asp-controller="Cart" asp-action="AddToCart" asp-route-idProduct="@item.product_ID"
+                        asp-route-name="@item.product_Name" class="btn btn-info">Add To Cart</a>
                 </div>
             </div>
         </div>

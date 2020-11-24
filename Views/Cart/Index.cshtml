@@ -27,7 +27,7 @@
            <td>@(stt++)</td>
            <td>@cartitem.Product.product_Name</td>
            <td>@(cartitem.Product.product_Price.ToString("n0"))</td>
-           <td><input asp-for="@cartitem.orderdetail_Quantity" id="@($"quantity-{cartitem.Product.product_ID}")"/></td>
+           <td><input asp-for="@cartitem.orderdetail_Quantity" id="@($"quantity-{cartitem.Product.product_ID}")" /></td>
            <td>@(thanhtien.ToString("n0"))</td>
            <td>
               <button class="btn btn-success updatecartitem" 
@@ -46,13 +46,13 @@
 
   <a asp-controller="Product" asp-action="Checkout" class="btn btn-success">Gửi đơn hàng</a>
 
-      @section Scripts {
+ @section Scripts {
         <script>
           $(document).ready(function () {
               $(".updatecartitem").click(function (event) {
                   event.preventDefault();
                   var productid = $(this).attr("data-productid");
-                  var quantity = $("#quantity-" + productid).val();
+                  var quantity = $("#orderdetail_Quantity-" + productid).val();
                   $.ajax({
                       type: "POST",
                       url:"@Url.RouteUrl("updatecart")",
@@ -68,7 +68,6 @@
           });
         </script>
       }
-
 }
 else {
   <p class="alert alert-danger">Giỏ hàng trống</p>

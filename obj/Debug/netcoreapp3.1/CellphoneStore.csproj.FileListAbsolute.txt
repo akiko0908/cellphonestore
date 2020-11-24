@@ -169,3 +169,5 @@ C:\Users\Admin\DataUser\HUFLIT\CellphoneStore\obj\Debug\netcoreapp3.1\Razor\Area
 C:\Users\Admin\DataUser\HUFLIT\CellphoneStore\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\_ValidationScriptsPartial.cshtml.g.cs
 C:\Users\Admin\DataUser\HUFLIT\CellphoneStore\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\_ViewImports.cshtml.g.cs
 C:\Users\Admin\DataUser\HUFLIT\CellphoneStore\obj\Debug\netcoreapp3.1\Razor\Views\Cart\Index.cshtml.g.cs
+C:\Users\Admin\DataUser\HUFLIT\CellphoneStore\obj\Debug\netcoreapp3.1\Razor\Views\Product\Index.cshtml.g.cs
+C:\Users\Admin\DataUser\HUFLIT\CellphoneStore\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_CartPartial.cshtml.g.cs
