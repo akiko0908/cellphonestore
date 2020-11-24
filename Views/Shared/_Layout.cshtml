@@ -11,62 +11,66 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
-        <div class="container">
-            <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">CellphoneStore</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
-                <ul class="navbar-nav flex-grow-1">
-                    <li class="nav-item dropdown">
-                        <a class="nav-link text-dark dropdown__select" asp-area="" asp-controller="Home"
-                            asp-action="Index">Điện
-                            thoại</a>
-                        <ul class="dropdown__list">
-                            <li class="dropdown__item">
-                                <a asp-controlle="Home" asp-action="CategoriesView" asp-route-idBrand="1"
-                                    class="dropdown__text">APPLE</a>
-                            </li>
-                            <li class="dropdown__item">
-                                <a asp-controlle="Home" asp-action="CategoriesView" asp-route-idBrand="2"
-                                    class="dropdown__text">SAMSUNG</a>
-                            </li>
-                            <li class="dropdown__item">
-                                <a asp-controlle="Home" asp-action="CategoriesView" asp-route-idBrand="3"
-                                    class="dropdown__text">OPPO</a>
-                            </li>
-                            <li class="dropdown__item">
-                                <a asp-controlle="Home" asp-action="CategoriesView" asp-route-idBrand="4"
-                                    class="dropdown__text">XIAOMI</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-dark" asp-area="" asp-controller="" asp-action="">Phụ
-                            kiện</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-dark" asp-area="" asp-controller="" asp-action="">Tablet</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-dark" asp-area="" asp-controller="" asp-action="">Trả góp</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-dark" asp-area="" asp-controller="" asp-action="">Liên lạc</a>
-                    </li>
-                </ul>
-            </div>
-            <form asp-controller="Home" asp-action="Search" method="post">
-                <div class="search-text">
-                    <input type="text" name="stringSearch" placeholder="Nhập sản phẩm cần tìm kiếm..." value="">
-                    <button type="submit"><i class="fa fa-search"></i></button>
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+            <div class="container">
+                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">CellphoneStore</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
+                    <ul class="navbar-nav flex-grow-1">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link text-dark dropdown__select" asp-area="" asp-controller="Home"
+                                asp-action="Index">Điện
+                                thoại</a>
+                            <ul class="dropdown__list">
+                                <li class="dropdown__item">
+                                    <a asp-controlle="Home" asp-action="CategoriesView" asp-route-idBrand="1"
+                                        class="dropdown__text">APPLE</a>
+                                </li>
+                                <li class="dropdown__item">
+                                    <a asp-controlle="Home" asp-action="CategoriesView" asp-route-idBrand="2"
+                                        class="dropdown__text">SAMSUNG</a>
+                                </li>
+                                <li class="dropdown__item">
+                                    <a asp-controlle="Home" asp-action="CategoriesView" asp-route-idBrand="3"
+                                        class="dropdown__text">OPPO</a>
+                                </li>
+                                <li class="dropdown__item">
+                                    <a asp-controlle="Home" asp-action="CategoriesView" asp-route-idBrand="4"
+                                        class="dropdown__text">XIAOMI</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="" asp-action="">Phụ
+                                kiện</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="" asp-action="">Tablet</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="" asp-action="">Trả góp</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="" asp-action="">Liên lạc</a>
+                        </li>
+                    </ul>
                 </div>
-            </form>
-            <partial name="_LoginPartial" />
-        </div>
-    </nav>
+                <form asp-controller="Home" asp-action="Search" method="post">
+                    <div class="search-text">
+                        <input type="text" name="stringSearch" placeholder="Nhập sản phẩm cần tìm kiếm..." value="">
+                        <button type="submit"><i class="fa fa-search"></i></button>
+                    </div>
+                </form>
+                <a class="cart" asp-controller="Cart" asp-action="Index">Giỏ hàng <i
+                        class="fa fa-shopping-cart"></i></a>
+                <partial name="_LoginPartial" />
+            </div>
+        </nav>
+    </header>
 
     <div class="container">
         <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">

@@ -14452,6 +14452,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\Admin\\DataUser\\HUFLIT\\CellphoneStore\\Views\\Cart\\Index.cshtml",
+      "TargetPath": "Views\\Cart\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\Admin\\DataUser\\HUFLIT\\CellphoneStore\\Views\\_ViewStart.cshtml",
       "TargetPath": "Views\\_ViewStart.cshtml",
       "FileKind": "mvc"
